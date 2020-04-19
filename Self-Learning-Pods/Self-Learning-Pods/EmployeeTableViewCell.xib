@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableViewCell" rowHeight="140" id="KGk-i7-Jjw" customClass="EmployeeTableViewCell" customModule="Self_Learning_Pods" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-Cr-h9j">
+                        <rect key="frame" x="16" y="16" width="107.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYe-d9-xTx">
+                        <rect key="frame" x="130.5" y="17.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTe-tM-Dt5">
+                        <rect key="frame" x="133" y="53.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-F1-tre">
+                        <rect key="frame" x="16" y="88" width="95.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Salary: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFl-hw-QlT">
+                        <rect key="frame" x="16" y="52" width="110" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jut-4u-Icv">
+                        <rect key="frame" x="118.5" y="89.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MTe-tM-Dt5" firstAttribute="centerY" secondItem="BFl-hw-QlT" secondAttribute="centerY" id="0KP-iV-102"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Tf-F1-tre" secondAttribute="bottom" constant="20" id="33k-YY-uG3"/>
+                    <constraint firstItem="0Tf-F1-tre" firstAttribute="top" secondItem="BFl-hw-QlT" secondAttribute="bottom" constant="20" id="5bH-lc-Nwi"/>
+                    <constraint firstItem="jut-4u-Icv" firstAttribute="leading" secondItem="0Tf-F1-tre" secondAttribute="trailing" constant="7" id="B0B-mg-8y9"/>
+                    <constraint firstItem="BFl-hw-QlT" firstAttribute="leading" secondItem="kPZ-Cr-h9j" secondAttribute="leading" id="F5X-Qe-6ac"/>
+                    <constraint firstItem="BFl-hw-QlT" firstAttribute="top" secondItem="kPZ-Cr-h9j" secondAttribute="bottom" constant="20" id="GeW-Dz-W8H"/>
+                    <constraint firstItem="kPZ-Cr-h9j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="GxZ-N1-yBi"/>
+                    <constraint firstItem="jut-4u-Icv" firstAttribute="centerY" secondItem="0Tf-F1-tre" secondAttribute="centerY" id="L3n-p8-kmv"/>
+                    <constraint firstItem="kPZ-Cr-h9j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VtK-Rb-dBo"/>
+                    <constraint firstItem="IYe-d9-xTx" firstAttribute="centerY" secondItem="kPZ-Cr-h9j" secondAttribute="centerY" id="aE7-wS-4Bg"/>
+                    <constraint firstItem="MTe-tM-Dt5" firstAttribute="leading" secondItem="BFl-hw-QlT" secondAttribute="trailing" constant="7" id="eOb-6h-ADX"/>
+                    <constraint firstItem="0Tf-F1-tre" firstAttribute="leading" secondItem="BFl-hw-QlT" secondAttribute="leading" id="jxZ-wq-OaK"/>
+                    <constraint firstItem="IYe-d9-xTx" firstAttribute="leading" secondItem="kPZ-Cr-h9j" secondAttribute="trailing" constant="7" id="pzh-Ns-K7H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="empAge" destination="jut-4u-Icv" id="aJC-RX-WXW"/>
+                <outlet property="empName" destination="IYe-d9-xTx" id="M3k-RE-zUa"/>
+                <outlet property="empSalary" destination="MTe-tM-Dt5" id="RhI-I8-3QX"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="156.69642857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

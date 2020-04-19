@@ -15,6 +15,8 @@
 		AF434A11244CA11C0071C5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF434A10244CA11C0071C5B4 /* Assets.xcassets */; };
 		AF434A14244CA11C0071C5B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF434A12244CA11C0071C5B4 /* LaunchScreen.storyboard */; };
 		AF434A1C244CA6400071C5B4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A1B244CA6400071C5B4 /* Test.swift */; };
+		AF434A1F244CC7140071C5B4 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */; };
+		AF434A20244CC7140071C5B4 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		AF434A13244CA11C0071C5B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF434A15244CA11C0071C5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF434A1B244CA6400071C5B4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 		B37355A4A98073577E4AA4C4 /* Pods-Self-Learning-Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Self-Learning-Pods.release.xcconfig"; path = "Target Support Files/Pods-Self-Learning-Pods/Pods-Self-Learning-Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,8 @@
 				AF434A12244CA11C0071C5B4 /* LaunchScreen.storyboard */,
 				AF434A15244CA11C0071C5B4 /* Info.plist */,
 				AF434A1B244CA6400071C5B4 /* Test.swift */,
+				AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */,
+				AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */,
 			);
 			path = "Self-Learning-Pods";
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF434A14244CA11C0071C5B4 /* LaunchScreen.storyboard in Resources */,
+				AF434A20244CC7140071C5B4 /* EmployeeTableViewCell.xib in Resources */,
 				AF434A11244CA11C0071C5B4 /* Assets.xcassets in Resources */,
 				AF434A0F244CA11B0071C5B4 /* Main.storyboard in Resources */,
 			);
@@ -212,6 +219,7 @@
 				AF434A0C244CA11B0071C5B4 /* ViewController.swift in Sources */,
 				AF434A1C244CA6400071C5B4 /* Test.swift in Sources */,
 				AF434A08244CA11B0071C5B4 /* AppDelegate.swift in Sources */,
+				AF434A1F244CC7140071C5B4 /* EmployeeTableViewCell.swift in Sources */,
 				AF434A0A244CA11B0071C5B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
