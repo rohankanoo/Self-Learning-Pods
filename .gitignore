@@ -39,5 +39,5 @@ fastlane/
 
 ## Pods
 Pods/
-!Podfile.lock
+Podfile.lock
 **/xcuserdata/**
