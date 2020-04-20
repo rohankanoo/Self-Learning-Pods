@@ -17,6 +17,7 @@
 		AF434A1C244CA6400071C5B4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A1B244CA6400071C5B4 /* Test.swift */; };
 		AF434A1F244CC7140071C5B4 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */; };
 		AF434A20244CC7140071C5B4 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */; };
+		AF434A22244CEC050071C5B4 /* UIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A21244CEC050071C5B4 /* UIImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AF434A1B244CA6400071C5B4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		AF434A21244CEC050071C5B4 /* UIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewController.swift; sourceTree = "<group>"; };
 		B37355A4A98073577E4AA4C4 /* Pods-Self-Learning-Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Self-Learning-Pods.release.xcconfig"; path = "Target Support Files/Pods-Self-Learning-Pods/Pods-Self-Learning-Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				AF434A1B244CA6400071C5B4 /* Test.swift */,
 				AF434A1D244CC7140071C5B4 /* EmployeeTableViewCell.swift */,
 				AF434A1E244CC7140071C5B4 /* EmployeeTableViewCell.xib */,
+				AF434A21244CEC050071C5B4 /* UIImageViewController.swift */,
 			);
 			path = "Self-Learning-Pods";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				AF434A1C244CA6400071C5B4 /* Test.swift in Sources */,
 				AF434A08244CA11B0071C5B4 /* AppDelegate.swift in Sources */,
 				AF434A1F244CC7140071C5B4 /* EmployeeTableViewCell.swift in Sources */,
+				AF434A22244CEC050071C5B4 /* UIImageViewController.swift in Sources */,
 				AF434A0A244CA11B0071C5B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

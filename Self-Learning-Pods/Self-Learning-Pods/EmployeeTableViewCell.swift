@@ -19,9 +19,9 @@ class EmployeeTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func configureCell(data: APIResponseModel?) {
-        empName.text = data?.employee_name
-        empSalary.text = data?.employee_salary
-        empAge.text = data?.employee_age
+    func configureCell(data: EmployeeModel?) {
+        empName.text = data?.employeeName
+        empSalary.text = data?.employeeSalary
+        empAge.text = data?.employeeAge
     }
 }

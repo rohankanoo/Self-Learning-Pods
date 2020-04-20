@@ -11,20 +11,20 @@ import Alamofire
 
 struct BaseModel: Codable {
     var status: String?
-    var data: [APIResponseModel]?
+    var data: [EmployeeModel]?
 }
 
-struct APIResponseModel: Codable {
-    var employee_name: String?
+struct EmployeeModel: Codable {
     var id: String?
-    var employee_salary: String?
-    var employee_age: String?
+    var employeeName: String?
+    var employeeSalary: String?
+    var employeeAge: String?
     
-    private enum CodingKeys : String, CodingKey {
-        case employee_name
+    private enum CodingKeys: String, CodingKey {
         case id
-        case employee_salary
-        case employee_age
+        case employeeName = "employee_name"
+        case employeeSalary = "employee_salary"
+        case employeeAge = "employee_age"
     }
 }
 
@@ -35,37 +35,41 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
+        registerTableViewCells()
+        getEmployeeData()
+    }
+    
+    private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    private func registerTableViewCells() {
         let nib = UINib.init(nibName: "EmployeeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "EmployeeTableViewCell")
-        // Do any additional setup after loading the view.
+    }
+    
+    private func getEmployeeData() {
+        // Show spinner
         Alamofire.request("https://dummy.restapiexample.com/api/v1/employees", method: .get, parameters: nil, encoding: URLEncoding.default)
             .validate(statusCode: 200..<300)
             .responseData { [weak self] response in
-//                switch response.result {
-//                case .failure(let error):
-//                    print(error)
-//                case .success(let data):
-//                    do {
-//                        let decoder = JSONDecoder()
-//                        decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                        let result = try decoder.decode(BaseModel.self, from: result)
-//                        self?.responseModel = result
-//                    } catch { print(error) }
-//                }
-                guard let result = response.result.value else {
-                    return
+                switch response.result {
+                case .failure(let error):
+                    print(error)
+                case .success(let data):
+                    do {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .useDefaultKeys
+                        let result = try decoder.decode(BaseModel.self, from: data)
+                        self?.responseModel = result
+                        print(result)
+                    } catch { print(error) }
                 }
-//                print(result)
-//                self?.modelArray = result
-                do {
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .useDefaultKeys
-                    let result = try decoder.decode(BaseModel.self, from: result)
-                    self?.responseModel = result
-                } catch { print(error) }
+                
                 self?.tableView.reloadData()
+                // Stop Spinner
         }
     }
 
@@ -83,5 +87,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "UIImageViewController")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
